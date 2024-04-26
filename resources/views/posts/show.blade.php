@@ -6,11 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>All of the Posts</h1>
-    <ul>
-    @foreach ($posts as $post)
-    <li><a href="/show/{{ $post->id }}">{{ $post->title }}</a></li>
-    @endforeach
-    </ul>
+    <h1>{{ $post->title }} </h1>
+    <p>ts belong to {{ $post->category_id }}</p>
 </body>
 </html>
